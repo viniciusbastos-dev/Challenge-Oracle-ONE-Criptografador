@@ -17,7 +17,7 @@ body {
 
 main {
     display: flex;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     margin-left: 240px;
 }
 
@@ -159,6 +159,7 @@ button {
     font-size: 0.7rem;
     padding: 1rem 0;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .footer-container li {

@@ -1,5 +1,5 @@
 #Challenge Oracle One e Alura - Criptografador de texto
-<p>
+<p style="font-style: italic">
 A letra "a" é convertida para "ai" </br>
 A letra "e" é convertida para "enter" </br>
 A letra "i" é convertida para "imes" </br>

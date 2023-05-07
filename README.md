@@ -7,5 +7,4 @@ A letra "o" é convertida para "ober" </br>
 A letra "u" é convertida para "ufat"</br>
 </p>
 
-##
-# Responsividade ainda em desenvolvimento
+# Responsividade em desenvolvimento

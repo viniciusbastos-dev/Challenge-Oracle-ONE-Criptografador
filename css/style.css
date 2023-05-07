@@ -17,7 +17,7 @@ body {
 
 main {
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     margin-left: 240px;
 }
 
@@ -151,6 +151,8 @@ button {
 
 /* Footer */
 .footer-container {
+    position: fixed;
+    bottom: 0;
     width: 100%;
     background: #072b61;
     color: white;

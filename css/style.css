@@ -1,0 +1,178 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #F3F5FC;
+}
+
+/* Header */
+
+.logo-alura {
+    padding-left: 84px;
+    padding-top: 40px;
+}
+
+/* Main */
+
+main {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 240px;
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+.input-text {
+    color: #0a3871;
+    border: none;
+    font-size: 32px;
+    margin-top: 80px;
+    width: 680px;
+    margin-bottom: 50%;
+    box-sizing: border-box;
+}
+
+.container-info img {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.container-botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+button {
+    box-sizing: border-box;
+}
+
+.btn-criptografar {
+    background-color: #0a3871;
+    color: #FFF;
+    border: 1px solid #0a3871;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    transition-duration: 600ms;
+}
+
+.btn-descriptografar {
+    background-color: #D8DFE8;
+    color: #0a3871;
+    border: 1px solid #0a3871;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    transition-duration: 600ms;
+}
+
+.btn-copiar {
+    background-color: #FFF;
+    color: #0a3871;
+    border: 1px solid #0a3871;
+    width: 336px;
+    height: 67px;
+    border-radius: 24px;
+    transition-duration: 600ms;
+
+}
+
+.btn-criptografar:hover {
+    border-color: #052051;
+    background-color: #052051;
+}
+
+.btn-descriptografar:hover {
+    background-color: #FFF;
+}
+
+.btn-copiar:hover {
+    background-color: #D8DFE8;
+}
+
+.container-output {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    justify-content: center;
+    width: 400px;
+    height: 894px;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px #00000014;
+    padding-bottom: 56px;
+    box-sizing: border-box;
+}
+
+.container-output img {
+    padding: 32px;
+}
+
+.container-output h2 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0 32px;
+    margin-bottom: 16px;
+    color: #343A40;
+}
+
+.container-output h3 {
+    text-align: center;
+    padding: 0 32px;
+    color: #495057;
+}
+
+.mensagem-nao-encontrada {
+    position: absolute;
+    top: 203px;
+    right: 0px;
+}
+
+.output-text {
+    background: #FFF;
+    color: #495057;
+    border: none;
+    font-size: 24px;
+    width: 336px;
+    height: 731px;
+    box-sizing: border-box;
+}
+
+
+/* Footer */
+.footer-container {
+    width: 100%;
+    background: #072b61;
+    color: white;
+    font-size: 0.7rem;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer-container li {
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.footer-container img {
+    margin-right: 5px;
+    height: 14px;
+    width: 14px;
+}

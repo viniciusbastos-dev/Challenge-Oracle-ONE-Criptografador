@@ -1,16 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codificador de Texto</title>
+    <title>Criptografador de texto</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
-    <div>
-        <button>Criptografar</button>
-        <button>Descriptografar</button>
-        <button>Copiar</button>
-    </div>
+    <header>
+        <img class="logo-alura" src="img/logo.svg" alt="Logo da Alura">
+    </header>
+    <main>
+
+        <section class="container-input">
+            <textarea class="input-text" placeholder="Digite seu texto" rows="8"></textarea>
+
+            <div class="container-info">
+                <h1><img class="icone-info" src="img/icone-info.svg" alt="Icone de informação">Apenas letras minúsculas e sem acento.</h1>
+            </div>
+
+            <div class="container-botoes">
+                <button onclick="criptografar()" class="btn-criptografar">Criprografar</button>
+                <button onclick="descriptografar()" class="btn-descriptografar">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="container-output">
+
+            <div class="mensagem-nao-encontrada">
+                <img src="img/nao-encontrado.svg" alt="Boneco segurando lupa">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <h3>Digite um texto que você deseja criptografar ou descriptografar.</h3>
+            </div>
+
+            <div class="resposta">
+                <textarea class="output-text" cols="20" rows="10" readonly></textarea>
+                <button onclick="copiar()" class="btn-copiar">Copiar</button>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <ul>
+                <li>Desenvolvido por Vinícius Bastos</li>
+                <li>•</li>
+                <li><a href="https://github.com/viniciusbastos-dev"><img class="logo-github"
+                            src="img/github.png">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/vin%C3%ADcius-bastos-silva/"><img class="logo-linkedin"
+                            src="img/linkedin.png">Linkedin</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
+
 </html>

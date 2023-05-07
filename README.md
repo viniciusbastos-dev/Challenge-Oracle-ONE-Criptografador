@@ -8,5 +8,4 @@ A letra "u" é convertida para "ufat"</br>
 </p>
 
 ##
-
 # Responsividade ainda em desenvolvimento

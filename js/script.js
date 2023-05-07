@@ -58,7 +58,7 @@ function descriptografar() {
 
         inputArea.value = "";
     } else {
-        alert("Digite a mensagem que quer criptografar!")
+        alert("Digite a mensagem que quer descriptografar!")
     }
 };
 

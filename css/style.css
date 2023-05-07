@@ -145,6 +145,9 @@ button {
     box-sizing: border-box;
 }
 
+.resposta {
+    display: none;
+}
 
 /* Footer */
 .footer-container {

@@ -1,5 +1,3 @@
-document.querySelector(".resposta").style.display = "none"
-
 var inputArea = document.querySelector(".input-text");
 var outputArea = document.querySelector(".output-text");
 
@@ -11,8 +9,9 @@ var resultado = "";
 
 
 inputArea.addEventListener("input", function () {
-    var textoValidado = inputArea.value.toLowerCase().replace(/[^a-z 0-9\s]/g, "");
-    inputArea.value = textoValidado
+    var texto = inputArea.value.toLowerCase().replace(/[^a-z 0-9\s]/g, "");
+    inputArea.value = texto
+
 });
 
 function criptografar() {
@@ -34,6 +33,7 @@ function criptografar() {
         outputArea.innerHTML = resultado;
 
         inputArea.value = "";
+
     } else {
         alert("Digite a mensagem que quer criptografar!")
     }
@@ -57,11 +57,14 @@ function descriptografar() {
         outputArea.innerHTML = resultado;
 
         inputArea.value = "";
+
     } else {
         alert("Digite a mensagem que quer descriptografar!")
+
     }
 };
 
 function copiar() {
     navigator.clipboard.writeText(resultado);
+
 }

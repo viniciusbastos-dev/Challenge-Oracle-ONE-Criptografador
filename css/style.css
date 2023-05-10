@@ -3,7 +3,7 @@
 }
 
 body {
-    background: #F3F5FC;
+    background: linear-gradient(120deg, rgba(233,236,248,1) 0%, rgba(170,178,213,1) 100%);
 }
 
 /* Header */
@@ -26,12 +26,15 @@ main {
 }
 
 .input-text {
+    background: transparent;
     color: #0a3871;
     border: none;
     font-size: 32px;
     margin-top: 80px;
     width: 680px;
     margin-bottom: 50%;
+    border-radius: 20px;
+    box-shadow: 0px 24px 32px -8px #00000014;
     box-sizing: border-box;
 }
 

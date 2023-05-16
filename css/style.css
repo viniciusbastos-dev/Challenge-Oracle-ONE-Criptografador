@@ -1,168 +1,126 @@
 * {
+    box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
 
 body {
-    background: #f3f5fc;
+    height: 100vh;
+    background: #F3F5FC;
+}
+
+textarea {
+    outline: none;
+    border: none;
+    background: transparent;
 }
 
 /* Header */
 
 .logo-alura {
-    padding-left: 84px;
-    padding-top: 40px;
+    position: fixed;
+    padding: 40px 0 0 81px;
 }
 
 /* Main */
 
 main {
     display: flex;
-    margin-bottom: 50px;
-    margin-left: 240px;
+    justify-content: space-between;
+    height: 80vh;
+    width: 80%;
+    margin: 0 auto;
 }
 
 ::placeholder {
     color: #0A3871;
 }
 
-.input-text {
-    background: transparent;
-    color: #0a3871;
-    border: none;
-    font-size: 32px;
-    margin-top: 80px;
+.input-container {
+    padding-top: 168px;
+}
+
+.input-area {
     width: 680px;
-    margin-bottom: 50%;
-    border-radius: 20px;
-    box-shadow: 0px 24px 32px -8px #00000014;
-    box-sizing: border-box;
+    height: 288px;
+    font-size: 32px;
+    color: #0A3871;
 }
 
-.container-info img {
-    margin-right: 8px;
-    vertical-align: middle;
-}
-
-.container-botoes {
+.wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: 1rem;
+    flex-wrap: wrap;
+    width: 680px;
 }
 
-button {
-    box-sizing: border-box;
+.info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 50%;
+    margin-bottom: 16px;
+    font-size: 12px;
+    color: #495057;
 }
 
-.btn-criptografar {
-    background-color: #0a3871;
-    color: #FFF;
-    border: 1px solid #0a3871;
-    width: 328px;
-    height: 67px;
-    border-radius: 24px;
-    transition-duration: 600ms;
+.icone-info {
+    margin-right: 0.5rem;
 }
 
-.btn-descriptografar {
-    background-color: #D8DFE8;
-    color: #0a3871;
-    border: 1px solid #0a3871;
-    width: 328px;
-    height: 67px;
-    border-radius: 24px;
-    transition-duration: 600ms;
-}
-
-.btn-copiar {
-    background-color: #FFF;
-    color: #0a3871;
-    border: 1px solid #0a3871;
-    width: 336px;
-    height: 67px;
-    border-radius: 24px;
-    transition-duration: 600ms;
-
-}
-
-.btn-criptografar:hover {
-    border-color: #052051;
-    background-color: #052051;
-}
-
-.btn-descriptografar:hover {
-    background-color: #FFF;
-}
-
-.btn-copiar:hover {
-    background-color: #D8DFE8;
-}
-
-.container-output {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    justify-content: center;
-    width: 400px;
-    height: 894px;
-    background-color: #FFF;
+.output-container {
     display: flex;
     flex-direction: column;
-    border-radius: 32px;
-    box-shadow: 0px 24px 32px -8px #00000014;
-    padding-bottom: 56px;
-    box-sizing: border-box;
-}
-
-.container-output img {
+    justify-content: center;
     padding: 32px;
+    margin: 40px 0;
+    width: 400px;
+    height: 863px;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 }
 
-.container-output h2 {
-    font-size: 24px;
-    font-weight: 700;
-    text-align: center;
-    padding: 0 32px;
-    margin-bottom: 16px;
-    color: #343A40;
-}
-
-.container-output h3 {
-    text-align: center;
-    padding: 0 32px;
-    color: #495057;
-}
-
-.mensagem-nao-encontrada {
-    position: absolute;
-    top: 203px;
-    right: 0px;
-}
-
-.output-text {
-    background: #FFF;
-    color: #495057;
-    border: none;
-    font-size: 24px;
-    width: 336px;
-    height: 731px;
-    box-sizing: border-box;
-}
-
-.resposta {
+.output-wrapper {
     display: none;
+    flex-direction: column;
+}
+
+.output-area {
+    width: 336px;
+    height: 700px;
+    font-size: 24px;
+    color: #495057;
+    margin-bottom: 56px;
+}
+
+.not-found {
+    display: flex;
+    flex-direction: column;
+}
+
+.not-found h2 {
+    color: #343A40;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+}
+
+.not-found h3 {
+    color: #495057;
+    text-align: center;
 }
 
 /* Footer */
 .footer-container {
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     background: #072b61;
     color: white;
     font-size: 0.7rem;
     padding: 1rem 0;
     text-align: center;
     box-sizing: border-box;
+    font-family: 'Inter';
 }
 
 .footer-container li {

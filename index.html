@@ -15,55 +15,58 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/components/button.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 
 <body>
+
     <header>
         <img class="logo-alura" src="img/logo.svg" alt="Logo da Alura">
     </header>
+
     <main>
+        <section class="input-container">
 
-        <section class="container-input">
-            <textarea class="input-text" placeholder="Digite seu texto" rows="8"></textarea>
+            <textarea class="input-area" placeholder="Digite seu texto"></textarea>
 
-            <div class="container-info">
-                <h1><img class="icone-info" src="img/icone-info.svg" alt="Icone de informação">Apenas letras minúsculas
+            <div class="wrapper">
+                <h1 class="info"><img class="icone-info" src="img/icone-info.svg" alt="Icone de informação">Apenas letras minúsculas
                     e sem acento.</h1>
-            </div>
 
-            <div class="container-botoes">
                 <button onclick="criptografar()" class="btn-criptografar">Criprografar</button>
                 <button onclick="descriptografar()" class="btn-descriptografar">Descriptografar</button>
             </div>
+
         </section>
 
-        <section class="container-output">
+        <section class="output-container">
 
-            <div class="mensagem-nao-encontrada">
+            <div class="output-wrapper">
+                <textarea class="output-area" cols="20" rows="10" readonly></textarea>
+                <button onclick="copiar()" class="btn-copiar">Copiar</button>
+            </div>
+
+            <div class="not-found">
                 <img src="img/nao-encontrado.svg" alt="Boneco segurando lupa">
                 <h2>Nenhuma mensagem encontrada</h2>
                 <h3>Digite um texto que você deseja criptografar ou descriptografar.</h3>
             </div>
 
-            <div class="resposta">
-                <textarea class="output-text" cols="20" rows="10" readonly></textarea>
-                <button onclick="copiar()" class="btn-copiar">Copiar</button>
-            </div>
         </section>
 
     </main>
-    <footer>
-        <div class="footer-container">
-            <ul>
-                <li>Desenvolvido por Vinícius Bastos</li>
-                <li>•</li>
-                <li><a href="https://github.com/viniciusbastos-dev" target="_blank"><img class="logo-github"
-                            src="img/github.png">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/vin%C3%ADcius-bastos-silva/" target="_blank"><img
-                            class="logo-linkedin" src="img/linkedin.png">Linkedin</a></li>
-            </ul>
-        </div>
+
+    <footer class="footer-container">
+        <ul>
+            <li>Desenvolvido por Vinícius Bastos</li>
+            <li>•</li>
+            <li><a href="https://github.com/viniciusbastos-dev" target="_blank"><img class="logo-github"
+                        src="img/github.png" alt="Logo do Github">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/vin%C3%ADcius-bastos-silva/" target="_blank"><img
+                        class="logo-linkedin" src="img/linkedin.png" alt="Logo do Linkedin">Linkedin</a></li>
+        </ul>
     </footer>
     <script src="js/script.js"></script>
 </body>

@@ -1,0 +1,45 @@
+@media screen and (max-width: 768px) {
+
+    button {
+        width: 332px;
+    }
+
+    .btn-copiar {
+        width: 624px;
+    }
+
+    .logo-alura {
+        padding: 72px 0 0 40px;
+    }
+
+    main {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .input-container {
+        padding-top: 240px;
+    }
+
+    .output-container {
+        width: 100%;
+        height: fit-content;
+        padding: 32px;
+        margin: 64px 0 110px 0;
+    }
+
+    .output-container img {
+        display: none;
+    }
+
+    .output-container h2 {
+        margin-bottom: 1rem;
+    }
+
+    .output-area {
+        width: 624px;
+        height: 188px;
+        margin-bottom: 32px;
+    }
+}

@@ -1,5 +1,5 @@
-var inputArea = document.querySelector(".input-text");
-var outputArea = document.querySelector(".output-text");
+var inputArea = document.querySelector(".input-area");
+var outputArea = document.querySelector(".output-area");
 
 var btnCripto = document.querySelector(".btn-criptografar");
 var btnDescripto = document.querySelector(".btn-descriptografar");
@@ -14,12 +14,15 @@ inputArea.addEventListener("input", function () {
 
 });
 
+function exibeResposta() {
+    document.querySelector(".output-wrapper").style.display = "flex"
+    document.querySelector(".not-found").style.display = "none"
+}
+
 function criptografar() {
 
     if (inputArea.value != "") {
-        document.querySelector(".resposta").style.display = "block"
-        document.querySelector(".mensagem-nao-encontrada").style.display = "none"
-
+        exibeResposta();
 
         resultado = inputArea.value;
 
@@ -36,9 +39,7 @@ function criptografar() {
 
 function descriptografar() {
     if (inputArea.value != "") {
-        document.querySelector(".resposta").style.display = "block"
-        document.querySelector(".mensagem-nao-encontrada").style.display = "none"
-
+        exibeResposta();
 
         resultado = inputArea.value;
 

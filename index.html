@@ -6,69 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criptografador de texto</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@300;400;700&display=swap"
+        rel="stylesheet">
 
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/components/button.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 
 </head>
 
 <body>
 
     <header>
-        <img class="logo-alura" src="img/logo.svg" alt="Logo da Alura">
+        <img class="logo__alura" src="assets/img/logo-alura.svg" alt="Logo da Alura">
     </header>
 
-    <main>
-        <section class="input-container">
-
-            <textarea class="input-area" placeholder="Digite seu texto"></textarea>
-
-            <div class="wrapper">
-                <h1 class="info"><img class="icone-info" src="img/icone-info.svg" alt="Icone de informação">Apenas letras minúsculas
-                    e sem acento.</h1>
-
-                <button onclick="criptografar()" class="btn-criptografar">Criptografar</button>
-                <button onclick="descriptografar()" class="btn-descriptografar">Descriptografar</button>
+    <main class="container">
+        <section class="input">
+            <textarea class="textarea input__area" placeholder="Digite seu texto"></textarea>
+            <div class="info">
+                <img class="info__icon" src="assets/img/icone-info.svg" alt="Símbolo de informação">
+                <p class="info__text">Apenas letras minúsculas e sem acento.</p>
             </div>
-
+            <div class="button__wrapper">
+                <button class="button criptografar">Criptografar</button>
+                <button class="button descriptografar">Descriptografar</button>
+            </div>
         </section>
-
-        <section class="output-container">
-
-            <div class="output-wrapper">
-                <textarea class="output-area" cols="20" rows="10" readonly></textarea>
-                <button onclick="copiar()" class="btn-copiar">Copiar</button>
+        <section class="output">
+            <div class="not__found">
+                <img class="not__found-img" src="assets/img/nao-encontrado.svg" alt="Imagem de não encontrado">
+                <h2 class="output__title">Nenhuma mensagem encontrada</h2>
+                <p class="output__text">Digite um texto que você deseja criptografar ou descriptografar.</p>
             </div>
-
-            <div class="not-found">
-                <img src="img/nao-encontrado.svg" alt="Boneco segurando lupa">
-                <h2>Nenhuma mensagem encontrada</h2>
-                <h3>Digite um texto que você deseja criptografar ou descriptografar.</h3>
+            <div class="result">
+                <textarea class="textarea output__area" readonly></textarea>
+                <button class="button copiar">Copiar</button>
             </div>
-
         </section>
-
     </main>
 
-    <footer class="footer-container">
+    <footer class="footer">
         <ul>
-            <li>Desenvolvido por Vinícius Bastos</li>
-            <li>•</li>
-            <li><a href="https://github.com/viniciusbastos-dev" target="_blank"><img class="logo-github"
-                        src="img/github.png" alt="Logo do Github">Github</a></li>
-            <li><a href="https://www.linkedin.com/in/vin%C3%ADcius-bastos-silva/" target="_blank"><img
-                        class="logo-linkedin" src="img/linkedin.png" alt="Logo do Linkedin">Linkedin</a></li>
+            <li>&copy; Desenvolvido por Vinícius Bastos</li>
+            <li><a href="https://github.com/viniciusbastos-dev"><img src="assets/img/github-icone.png" alt="Icone do Github"></a></li>
+            <li><a href="https://www.linkedin.com/in/vinicius-bastos-silva/"><img src="assets/img/linkedin-icone.png" alt="Icone do Linkedin"></a></li>
         </ul>
     </footer>
-    <script src="js/script.js"></script>
 </body>
+
+<script src="assets/js/script.js"></script>
 
 </html>

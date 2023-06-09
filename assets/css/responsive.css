@@ -1,0 +1,38 @@
+@media screen and (min-width: 768px) {
+  .button__wrapper {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6rem;
+  }
+
+  .button {
+    max-width: 350px;
+  }
+
+  .output {
+    max-width: 400px;
+  }
+
+  .not__found-img {
+    display: block;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+/* Previnir erro com telas baixas */
+
+@media screen and (max-height: 650px) {
+  .footer {
+    position: static;
+  }
+}

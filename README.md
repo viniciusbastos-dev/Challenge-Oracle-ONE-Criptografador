@@ -30,16 +30,3 @@ The text cryptographer performs the following substitutions:
 ## Project URL
 
 Access the live project on GitHub Pages: [Text Cryptographer - Alura Challenge](https://viniciusbastos-dev.github.io/Challenge-Oracle-ONE-Criptografador/)
-
-## Running the Project Locally
-
-If you want to run the project locally on your machine:
-
-1. Clone this repository: `git clone https://github.com/viniciusbastos-dev/https://github.com/viniciusbastos-dev/Challenge-Oracle-ONE-Criptografador.git`
-2. Open the `index.html` file in your web browser.
-
-## Contribution
-
-Contributions are welcome! Feel free to open issues to discuss possible improvements, new features, or submit pull requests.
-
-

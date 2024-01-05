@@ -2,7 +2,7 @@
 
 This project consists of a simple and responsive website developed based on the Figma design provided by Alura. The goal is to convert texts using a specific encryption method where certain vowels are replaced by keywords.
 
-![Mockups](https://github.com/viniciusbastos-dev/Challenge-Oracle-ONE-Criptografador/assets/130726518/5d26c9ea-3c83-4a6b-98ad-23ad5ce28534)
+![mockups-crypto](https://github.com/viniciusbastos-dev/Challenge-Oracle-ONE-Criptografador/assets/130726518/f3999618-27f7-4348-bc6b-99d1b1364afa)
 
 ## Features
 

@@ -15,9 +15,9 @@ The text cryptographer performs the following substitutions:
 ## Usage
 
 1. Access the cryptographer website.
-2. Enter the text you wish to encrypt in the provided text box.
-3. Click the "Encrypt" button to view the text converted according to the defined substitutions.
-4. The encrypted text will be displayed in the designated area or copied to the clipboard, depending on the implementation.
+2. Enter the text you wish to encrypt or decrypt in the provided text box.
+3. Click the "Criptografar" button to convert the text to the defined substitutions or click the "Descriptografar" button to revert the substitutions back to the original text.
+4. The processed text will be displayed in the designated area or copied to the clipboard, depending on the implementation.
 
 ## Technologies Used
 
@@ -25,21 +25,19 @@ The text cryptographer performs the following substitutions:
 - CSS3
 - JavaScript
 
+## Project URL
+
+Access the live project on GitHub Pages: [Text Cryptographer - Alura Challenge](https://viniciusbastos-dev.github.io/Challenge-Oracle-ONE-Criptografador/)
+
 ## Running the Project Locally
 
 If you want to run the project locally on your machine:
 
-1. Clone this repository: `git clone https://github.com/your-username/repository-name.git`
+1. Clone this repository: `git clone https://github.com/viniciusbastos-dev/https://github.com/viniciusbastos-dev/Challenge-Oracle-ONE-Criptografador.git`
 2. Open the `index.html` file in your web browser.
 
 ## Contribution
 
 Contributions are welcome! Feel free to open issues to discuss possible improvements, new features, or submit pull requests.
 
-## License
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE.md](LICENSE.md) file for more details.
-
-## Project URL
-
-Access the live project on GitHub Pages: [Text Cryptographer - Alura Challenge](https://viniciusbastos-dev.github.io/Challenge-Oracle-ONE-Criptografador/)
